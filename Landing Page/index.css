@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color:rgb(230, 239, 255);
+    overflow-x: hidden;
+}
+nav{
+    width: 100vw;
+    font-size: 1.25rem;
+    padding: 1vh 0vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 20px #555;
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+}
+nav img{
+    height: 50px;
+    width: 60px;
+    margin-left:4vw ;
+}
+nav .logo{
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+nav .logo h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+nav ul{
+    margin-right: 4vw;
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    padding: 1vh 1vw;
+    font-weight: 500;
+    color: rgb(96, 177, 150);
+    text-decoration: none;
+    border:none;
+    border-radius:5px;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    background: rgb(96, 177, 150);
+    color: #fff;
+}
+
+#Home{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#Home .left,#Home .right{
+    width: 100%;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#Home .left{
+    align-items: flex-start;
+    padding-left:7vw ;
+}
+#Home .left h1{
+    margin-top:0;
+}
+#Home .left span{
+    font-size: 3rem;
+}
+#Home .left input{
+    width:60%;
+    padding: 1vw 3vw;
+    margin-top:-10px;
+    margin-bottom: 2vw;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#Home .left button{
+    padding: 0.8vw 1.5vw;
+    color: #fff;
+    font-weight: 500;
+    width: 25%;
+    font-size: 1.5rem;
+    background: rgb(96, 177, 150);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#Home .right #img2{
+    height: 80%;
+    width: 75%;
+}
+
+
+#Speciality{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 10vh;
+}
+#Speciality h2{
+    height: 10vh;
+    font-size: 3rem;
+    color: #fff;
+}
+ #Speciality #sp{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+#Speciality h1{
+    color:rgb(96, 177, 150) ;
+    font-size: 1.9rem;
+}
+#Speciality span{
+    color: #777;
+}
+
+#sp img{
+    width: 200px;
+    height: 200px;
+}
+.spdish{
+    margin-left: 3vw;
+    width: 25vw;
+    height: 40vh;
+    padding: 3vh 1vw;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+
+#Popular .card{
+    width: 80%;
+    line-height: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.bt{
+    margin-top: 1.5vh;
+    padding: 0 3vw;
+}
+#Popular button{
+    border-radius:5px;
+    background: #ffffff;
+    transition: 0.5s ease;
+}
+#Popular button:hover{
+    background-color: rgb(96, 177, 150);
+    color: #fff;
+}
+
+.rev{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: slider 15s  infinite ;
+
+}
+.slide{
+    position: absolute;
+    text-align: center;
+    background: rgb(230, 239, 255);   
+}
+@keyframes slider {
+    0%{
+        right: 0;
+    }
+    30%{
+        right: 120vw;
+    }
+    50%{
+        right: 220vw;
+    }
+    70%{
+        right: 120vw;
+    }
+    100%{
+        right: 0;
+    }
+    
+}
+.slide img{
+    width: 400px;
+    height: 300px;
+}
+.slide h3{
+    font-size: 2.5rem;
+     color: rgb(96, 177, 150);
+}
+.slide p{
+    width: 60vw;
+    color: #777;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#Contact{
+    margin: 5vh 10%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Contact .left ,#Contact .right{
+    width: 50%;
+    height: 80%;
+    padding: 5vh 5vw;
+    line-height: 3vh;
+    border: none;
+}
+#Contact h1{
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+#Contact dt{
+    margin-bottom: 1vh;
+    text-decoration:underline 2px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#Contact dd{
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+#Contact .right input,textarea,button{
+    padding: 1.3vh 2vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2vh;
+    border: none;
+    border-radius: 5px;
+    color: rgb(96, 177, 150);
+    background: #fff;
+}
+#Contact textarea{
+    height: 10vh;
+}
+#Contact button{
+    width: 30%;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#Contact button:hover{
+    transform: translateY(-1vh);
+}
